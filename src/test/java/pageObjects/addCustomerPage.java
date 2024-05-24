@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -63,6 +64,7 @@ public WebDriver ldriver;
 	
 	public void setEmail(String email) {
 		ldriver.findElement(txtEmail).sendKeys(email);
+		System.out.println("Im new");
 	}
 	
 	public void setPassword(String pwd) {
