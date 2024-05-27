@@ -1,5 +1,7 @@
 package utilities;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,7 +16,7 @@ public class waitHelper {
 	}
 	
 	public void waitForElement(WebElement element, long timeOutInSeconds) {
-		WebDriverWait wait = new WebDriverWait(driver,timeOutInSeconds);
+		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
