@@ -31,88 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Newtest1</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">2.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Newtest1</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">12.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Newtest1 &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">testCases.NewTest1</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1716710729524</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Newtest1 &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">testCases.NewTest1</td><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1716710731628</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Newtest1 &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">testCases.NewTest1</td><td><a href="#m3"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1716710731341</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Newtest1 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">testCases.NewTest1</td><td><a href="#m1"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1716805419739</td><td class="numi">9075</td></tr>
 </table>
 <h1>Newtest1</h1>
-<h2 id="m1">testCases.NewTest1:setup</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th></tr>
-<tr class="param stripe"><td>chrome</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 125.0.6422.113 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-EG3OU6E&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	GetHandleVerifier [0x00FB6E73+48323]
-	(No symbol) [0x00F49661]
-	(No symbol) [0x00E55308]
-	(No symbol) [0x00E7634C]
-	(No symbol) [0x00E72093]
-	(No symbol) [0x00E70719]
-	(No symbol) [0x00EA0DF5]
-	(No symbol) [0x00EA0ADC]
-	(No symbol) [0x00E9A6D6]
-	(No symbol) [0x00E7847C]
-	(No symbol) [0x00E7957D]
-	GetHandleVerifier [0x0121FD5D+2575277]
-	GetHandleVerifier [0x0125F86E+2836158]
-	GetHandleVerifier [0x012596DC+2811180]
-	GetHandleVerifier [0x010441B0+626688]
-	(No symbol) [0x00F5314C]
-	(No symbol) [0x00F4F4B8]
-	(No symbol) [0x00F4F59B]
-	(No symbol) [0x00F421B7]
-	BaseThreadInitThunk [0x750E7BA9+25]
-	RtlInitializeExceptionChain [0x772FBE3B+107]
-	RtlClearBits [0x772FBDBF+191]
-</p>
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-<br/>at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-<br/>at stepDefinitions.baseClass.setUp(baseClass.java:60)
-<br/>at testCases.NewTest1.setup(NewTest1.java:27)
-<br/>27 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">testCases.NewTest1:tearDown</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">testCases.NewTest1:loginTest</h2>
+<h2 id="m1">testCases.NewTest1:loginTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
