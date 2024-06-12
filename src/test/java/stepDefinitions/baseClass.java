@@ -68,7 +68,7 @@ public class baseClass {
 			driver = new FirefoxDriver();
 			}
 	return driver;
-			
+			//adding the comments to check
 		}
 public static String takeScreenShot(String screenShotName) throws IOException {
         
