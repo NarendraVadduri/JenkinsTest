@@ -27,7 +27,7 @@ public class NewTest1 extends baseClass {
 		driver = setUp(browser);     // to run the test case from TestNG.xml file
 	//	driver = setUp("edge");  // To run the test case as TestNG test
 		driver.get(baseURL);
-		//create the object for loginpage
+
 	    lp = new loginPage(driver);
 	    extent = new ExtentReporting();
 	}
